@@ -9,11 +9,13 @@ class Engine:
     Runs the engine
     """
     def __init__(self):
+        print("Running bot.")
         self.key_pressed = False
         # Listens keyboard events
         listener = Listener(self.on_press, self.on_release)
         listener.start()
         listener.join()
+        print("Listening to key pressed...")
 
     """
     Checks if the correct key triggered the event
@@ -29,6 +31,7 @@ class Engine:
     """
     def on_release(self, key):
         if self.key_pressed:
+            print("Solving...")
             self.key_pressed = not self.key_pressed
             self.action()
 
