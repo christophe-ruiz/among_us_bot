@@ -5,7 +5,9 @@
 
 As of today (v0.1) the bot can solve the wiring task in Among Us.
 
-Run the script then open the wiring mini-game and 
+Run the bot with the executable or script (requirements in pipfile and requirements.txt) then open the wiring mini-game and 
 simply press the UP arrow key to quickly solve it.
+
+The bot may not be functional on every screen resolution.
 
 The script requires Pynput and Pillow libraries.
